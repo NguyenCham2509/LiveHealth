@@ -1,0 +1,118 @@
+/* ══════════════════════════════
+   Footer – Ecobazar style
+   ══════════════════════════════ */
+
+/* newsletter bar */
+.ft-newsletter {
+  background: var(--gray-900);
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.ft-nl-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ft-nl-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ft-nl-brand {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--white);
+}
+.ft-nl-center span {
+  color: var(--gray-300);
+  font-size: 14px;
+}
+.ft-nl-form {
+  display: flex;
+  height: 46px;
+  border-radius: 46px;
+  overflow: hidden;
+  background: var(--gray-800);
+}
+.ft-nl-form input {
+  border: none;
+  background: transparent;
+  color: var(--white);
+  padding: 0 20px;
+  outline: none;
+  width: 260px;
+  font-size: 14px;
+}
+.ft-nl-form input::placeholder { color: var(--gray-500); }
+.ft-nl-form button {
+  background: var(--green);
+  color: var(--white);
+  padding: 0 28px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 46px;
+  transition: background .2s;
+}
+.ft-nl-form button:hover { background: var(--green-dark); }
+
+/* main */
+.ft-main {
+  background: var(--gray-900);
+  padding: 60px 0 40px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.ft-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+  gap: 24px;
+}
+.ft-col h4 {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.ft-col ul li { margin-bottom: 10px; }
+.ft-col ul a {
+  color: var(--gray-500);
+  font-size: 14px;
+  transition: color .2s;
+}
+.ft-col ul a:hover { color: var(--white); }
+.ft-col-about p {
+  color: var(--gray-500);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.ft-contact span {
+  display: block;
+  color: var(--white);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.ft-app-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ft-app-btns img {
+  height: 40px;
+  width: auto;
+}
+
+/* bottom */
+.ft-bottom {
+  background: var(--gray-900);
+  padding: 20px 0;
+  text-align: center;
+}
+.ft-bottom span {
+  color: var(--gray-500);
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .ft-grid { grid-template-columns: repeat(2, 1fr); }
+  .ft-nl-inner { flex-direction: column; gap: 16px; }
+}
